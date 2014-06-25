@@ -92,18 +92,17 @@ for HEARTBEAT in 580; do
 		for FRECUENCY in 20; do
 
 
-				if [ $FRECUENCY = "10" ]; then
-                        COUNT=500
-						wait=1
-                        else
-                        if [ $FRECUENCY = "100" ]; then
+			if [ $FRECUENCY = "10" ]; then
+                        	COUNT=500
+				wait=1
+                        else if [ $FRECUENCY = "100" ]; then
                         	COUNT=100        #para pruebas 100 mensajes de 512k
-							wait=5
-						else
+				wait=5
+			else
                         	COUNT=50
-							wait=5
-						fi
-				fi
+				wait=5
+			fi
+			fi
 
 
                 while [ $c -le 1 ]	#cien pruebas
