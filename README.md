@@ -1,0 +1,4 @@
+amqpTestbed
+===========
+
+shellScriptsUsedInTheAMQPTestBed
