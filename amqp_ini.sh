@@ -53,10 +53,6 @@ echo $ap2 >> $summaryFile
 
 #-----------------------------------------------------------
 
-ap2=`iwconfig wlan0 | grep "Mode" | awk -F "Point: " '{print$2}'`
-echo $ap2 >> $summaryFile
-
-
 if [ "$ap1" == "$ap2" ]; then
         echo "No se ha efectuado cambio de AP"
         echo "No se ha efectuado cambio de AP" >> $summaryFile
